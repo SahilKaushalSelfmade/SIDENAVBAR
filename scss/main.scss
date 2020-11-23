@@ -1,0 +1,63 @@
+@import "global";
+
+// SIDE NAVBAR
+// #nav {
+//   min-width: 270px;
+//   max-width: 270px;
+//   transition: all 0.3s;
+.sidenav {
+  background-color: #3e64ff;
+  min-height: 100vh !important;
+
+  max-width: 140px;
+  //   margin-right: 10px !important;
+  min-width: 130px;
+  transition: all 0.3s;
+  color: white;
+  &ul {
+    text-align: center;
+    position: sticky !important;
+    top: 0;
+
+    &li {
+      &_logo {
+        p {
+          font-weight: bolder;
+          font-size: 5rem;
+          border-bottom: 2px white solid;
+        }
+      }
+      &_li {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        padding: 10px 0;
+        line-height: 3;
+        border-bottom: 1px white dotted;
+
+        &a {
+          font-size: 1.2rem;
+          font-weight: bolder;
+        }
+        &:hover {
+          padding: 20px 0;
+          transition: 0.5s ease-in-out;
+          background-color: rgb(38, 0, 255);
+        }
+      }
+    }
+  }
+}
+// }
+// SIDE NAVBAR
+
+// BODY
+// HOME
+.homesection {
+  max-width: 1200px;
+  padding: 100px 20px;
+}
+// HOME
+// BODY
+
+@import "mediaqueries";

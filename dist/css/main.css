@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+html {
+  background-color: #e69d9d;
+  word-break: break-all;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.sidenav {
+  background-color: #3e64ff;
+  min-height: 100vh !important;
+  max-width: 140px;
+  min-width: 130px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+}
+
+.sidenavul {
+  text-align: center;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+}
+
+.sidenavulli_logo p {
+  font-weight: bolder;
+  font-size: 5rem;
+  border-bottom: 2px white solid;
+}
+
+.sidenavulli_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 0;
+  line-height: 3;
+  border-bottom: 1px white dotted;
+}
+
+.sidenavulli_lia {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.sidenavulli_li:hover {
+  padding: 20px 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #2600ff;
+}
+
+.homesection {
+  max-width: 1200px;
+  padding: 100px 20px;
+}
+
+@media all and (max-width: 768px) {
+  .sidenav {
+    min-width: 100px;
+  }
+  .sidenavulli_logo p {
+    font-size: 4rem;
+  }
+  .sidenavulli_lia {
+    font-size: 0.7rem;
+  }
+}

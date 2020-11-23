@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+html {
+  background-color: rgb(230, 157, 157);
+  word-break: break-all;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}

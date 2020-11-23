@@ -1,0 +1,24 @@
+@media all and (max-width: 768px) {
+  html {
+  }
+  // SIDENAV
+  .sidenav {
+    min-width: 100px;
+
+    &ul {
+      &li {
+        &_logo {
+          p {
+            font-size: 4rem;
+          }
+        }
+        &_li {
+          &a {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  // SIDENAV
+}
