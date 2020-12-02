@@ -1,10 +1,29 @@
-@media all and (max-width: 768px) {
-  html {
+@media all and (max-width: 562px) {
+  .flexcol {
+    display: inline=block !important;
   }
+  .container,
+  .body {
+    padding-right: 80px !important;
+    min-width: 480px !important;
+  }
+  .sidenav {
+    min-width: 60px !important;
+    max-width: 70px !important;
+  }
+}
+@media all and (max-width: 768px) {
+  .container,
+  .body {
+    margin-left: 90px !important;
+    min-width: 660px !important;
+    padding: 0 10px !important;
+  }
+
   // SIDENAV
   .sidenav {
-    min-width: 100px;
-
+    max-width: 80px;
+    min-width: 80px;
     &ul {
       &li {
         &_logo {
@@ -21,9 +40,6 @@
     }
   }
   // SIDENAV
-  .container {
-    // margin-left: 100px !important;
-  }
 }
 @media (min-width: 768px) {
   // GLOBAL
@@ -46,4 +62,7 @@
     font-size: 1.1rem;
   }
   // GLOBAL
+  .container {
+    margin-left: 120px !important;
+  }
 }

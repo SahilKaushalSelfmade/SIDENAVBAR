@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
   cursor: default;
 }
 
@@ -21,20 +20,19 @@ ul {
   list-style: none;
 }
 
-body {
-  margin: 0 auto;
+.flexcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container {
+  padding: 0 10px;
+  margin: 70px 10px 70px 60px !important;
+  text-align: center;
   max-width: 1200px !important;
-  margin: 0 auto !important;
-}
-
-section {
-  max-width: 1200px;
-  text-align: center;
-  margin: 70px auto;
-  text-align: center;
 }
 
 img {
@@ -42,19 +40,19 @@ img {
 }
 
 .border_bottom {
+  margin: 0 auto;
   border-bottom: 1px solid black;
 }
 
 .sidenav {
   background-color: #3e64ff;
-  min-height: 100vh !important;
-  position: fixed !important;
-  text-align: center !important;
+  min-height: 100% !important;
+  margin-right: 20px;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   max-width: 140px;
-  min-width: 110px;
+  min-width: 130px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: white;
@@ -65,6 +63,7 @@ img {
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 0;
+  left: 0;
 }
 
 .sidenavulli_logo p {
@@ -99,11 +98,6 @@ img {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   background-color: #2600ff;
-}
-
-.homesection {
-  max-width: 1200px;
-  padding: 80px 20px;
 }
 
 .hero_section {
@@ -410,9 +404,31 @@ img {
   visibility: hidden;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 562px) {
+  .flexcol {
+    display: inline=block !important;
+  }
+  .container,
+  .body {
+    padding-right: 80px !important;
+    min-width: 480px !important;
+  }
   .sidenav {
-    min-width: 100px;
+    min-width: 60px !important;
+    max-width: 70px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container,
+  .body {
+    margin-left: 90px !important;
+    min-width: 660px !important;
+    padding: 0 10px !important;
+  }
+  .sidenav {
+    max-width: 80px;
+    min-width: 80px;
   }
   .sidenavulli_logo p {
     font-size: 4rem;
@@ -440,5 +456,8 @@ img {
   }
   p {
     font-size: 1.1rem;
+  }
+  .container {
+    margin-left: 120px !important;
   }
 }

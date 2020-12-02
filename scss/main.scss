@@ -5,22 +5,23 @@
 //   min-width: 270px;
 //   max-width: 270px;
 //   transition: all 0.3s;
+
 .sidenav {
   background-color: #3e64ff;
-  min-height: 100vh !important;
-  position: fixed !important;
-  text-align: center !important;
+  min-height: 100% !important;
+  margin-right: 20px;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   max-width: 140px;
-  min-width: 110px;
+  min-width: 130px;
   transition: all 0.3s;
   color: white;
   &ul {
     text-align: center;
     position: sticky !important;
     top: 0;
+    left: 0;
 
     &li {
       &_logo {
@@ -55,11 +56,6 @@
 // SIDE NAVBAR
 
 // BODY
-// HOME
-.homesection {
-  max-width: 1200px;
-  padding: 80px 20px;
-}
 // HOME
 
 // HERO SECTION
