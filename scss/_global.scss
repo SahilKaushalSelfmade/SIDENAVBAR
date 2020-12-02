@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   cursor: default;
 }
 html {
@@ -16,11 +17,24 @@ ul {
   list-style: none;
 }
 body {
-  display: flex;
-  justify-content: flex-start;
+  // display: flex;
+  // justify-content: flex-start;
   margin: 0 auto;
 }
 .container {
   max-width: 1200px !important;
   margin: 0 auto !important;
+}
+
+section {
+  max-width: 1200px;
+  text-align: center;
+  margin: 70px auto;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+.border_bottom {
+  border-bottom: 1px solid black;
 }
