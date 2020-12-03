@@ -53,7 +53,7 @@ img {
   background-color: #3e64ff;
   min-height: 100% !important;
   margin-right: 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   max-width: 140px;
@@ -65,8 +65,6 @@ img {
 
 .sidenavul {
   text-align: center;
-  position: -webkit-sticky !important;
-  position: sticky !important;
   top: 0;
   left: 0;
 }
